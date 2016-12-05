@@ -33,7 +33,7 @@ Repositories:
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/LiquidDeathOS/manifest.git -b n
+    repo init -u git://github.com/LiquidDeathOS/manifest.git -b n7.1
 
     repo sync -fcj4 --force-sync --no-tags --no-clone-bundle --force-broken 
     
