@@ -1,7 +1,6 @@
-![alt text](http://stats.liquidsmooth.net/images/logo2.png "LiquidSmooth")
-LiquidSmooth Source
+LiquidDeathOS Source
 ===================
-To get started with LiquidSmooth, you'll need to get
+To get started with LiquidDeathOS, you'll need to get
 familiar with [Git and Repo](http://source.android.com/source/version-control.html).
 
 Create the Directories 
@@ -12,7 +11,7 @@ You will need to set up some directories in your build environment.
 To create them run:
 
     mkdir -p ~/bin
-    mkdir -p ~/liquid
+    mkdir -p ~/LiquidDeathOS
 
 Install the Repository
 ----------------------
@@ -26,7 +25,7 @@ Enter the following to download the "repo" binary:
 You may need to reboot for these changes to take effect. 
 Now enter the following to initialize the repository:
 
-    cd ~/liquid
+    cd ~/LiquidDeathOS
 
 
 Repositories:
@@ -34,31 +33,31 @@ Repositories:
 
 Before you continue --> run this in the terminal
 
-    repo init -u git://github.com/LiquidSmooth/android.git -b mm6.0
+    repo init -u git://github.com/LiquidDeathOS/manifest.git -b n
 
-    repo sync
+    repo sync -fcj4 --force-sync --no-tags --no-clone-bundle --force-broken 
     
 
 Building the System
 ---------------
 
-Build LiquidSmooth with the following command
+Build LiquidDeathOS with the following command
 
-    ./build-liquid.sh {options} {device}
+    ./build-deathly.sh {options} {device}
 
 Use the following as options...
 ---------------
 
     Options:
     -c# Cleanin options before build:
-            c1 - make liquid
+            c1 - make deathly
             c2 - make clean
             c3 - make dirty
             c4 - make magic
             c5 - make kernelclean
     -d  Use dex optimizations
     -i  Static Initlogo
-    -j# Set jobs
+    -j# Set jobs (determined by the number of threads that the cpu has)
     -s  Sync before build
     -p  Build using pipe
     -o# Select GCC O Level
@@ -68,25 +67,29 @@ Use the following as options...
 
 Example:
 ---------------
-    ./build-liquid.sh -c3 -p -o3 -j18 hammerhead
+    ./build-deathly.sh -c3 -p -o3 -j4 n1awifi
 
-Uploading to the LiquidSmooth Gerrit
+Uploading to the exynos5420 Gerrit
 ---------------
 
 1st You must have local ssh keys on your computer if you do not here is a [guide] (http://goo.gl/86CfDP) to generate them.
 
-2nd Make an account on [Gerrit] (http://gerrit.liquidsmooth.net)
+2nd Make an account on [Gerrit] (https://review.exynos5420.com)
 
 3rd Add your ssh public key to your account
 
 4th Make your changes and commit them
 
-5th use the following command to push your commit to gerrit
+5th use the following command to push your commit to gerrit            
 
-    git push ssh://USERNAME@gerrit.liquidsmooth.net:29418/LiquidSmooth-Devices/REPO_NAME HEAD:refs/for/mm6.0
-or
 
-    git push ssh://USERNAME@gerrit.liquidsmooth.net:29418/LiquidSmooth/REPO_NAME HEAD:refs/for/mm6.0
+    git push ssh://USERNAME@review.exynos5420.com:29418/exynos5420/REPO_NAME HEAD:refs/for/branch-name
+
+Example:   
+    
+    git push ssh://mosimchah@review.exynos5420.com:29418/exynos5420/android_device_samsung_exynos5420-common HEAD:refs/for/aosp-7.1
+
+
 
 6th You will get an error about a missing Change-ID in that error it will show you a suggested commit message copy the change id
 
@@ -101,3 +104,23 @@ Here is an example of what the commit message should look like:
 > Change-Id: I93949d30d732de35222d9d78d1f94e33e4bffc47
 
 8th use the same command to push to gerrit and if you did everything properly it will be up on gerrit
+
+
+
+## Maintain Authorship ##
+Please make sure if you submit a patch/fix from another ROM that you maintain authorship. 
+This is very important to not only us but to the entire open source community. It's what keeps it going and encourages more developers to contribute their work.
+
+If you manually cherry pick a patch/fix please add the original author prior to pushing to our gerrit. 
+This task is very easy and is usually done after you commit a patch/fix locally.
+
+i.e - Once you type in "git commit -a" the commit message and you have saved it, type in the following:
+
+```bash
+git commit --amend --author "Author <email@address.com>"
+```
+
+So it should look like this once you get all author's information:
+
+```bash
+git commit --amend --author "deadman96385 <seanhoyt963@gmail.com>"
