@@ -8,6 +8,10 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
 
+  <remote  name="ld"
+           fetch="https://github.com/LiquidDeathOS/"
+           review="review.exynos5420.com" />
+
   <remote  name="du"
            fetch="https://github.com/DirtyUnicorns/"
            review="gerrit.dirtyunicorns.com" />
