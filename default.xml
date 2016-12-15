@@ -73,7 +73,6 @@
   <project path="external/drm_gralloc" name="platform/external/drm_gralloc" groups="drm_gralloc" />
   <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer" />
   <project path="external/droiddriver" name="platform/external/droiddriver" groups="pdk-cw-fs,pdk-fs" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="pdk" />
   <project path="external/easymock" name="platform/external/easymock" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-basebuilder" name="platform/external/eclipse-basebuilder" groups="pdk-cw-fs,pdk-fs" />
   <project path="external/eclipse-windowbuilder" name="platform/external/eclipse-windowbuilder" groups="pdk-cw-fs,pdk-fs" />
@@ -420,6 +419,7 @@
   <project path="external/llvm" name="android_external_llvm" remote="ld" revision="n7.1" />
   <project path="external/skia" name="android_external_skia" remote="ld" revision="n7.1" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ld" revision="n7.1" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="ld" revision="n7.1" />
 
   <!-- system -->
   <project path="system/bt" name="android_system_bt" remote="ld" revision="n7.1" />
