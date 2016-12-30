@@ -406,6 +406,9 @@
   <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="du" revision="n7x-caf" />
   <project path="external/fuse" name="android_external_fuse" remote="du" revision="n7x-caf" />
   
+  <!-- BrokenOS repos -->
+  <project path="packages/apps/Browser2" name="BrokenROM/packages_apps_Browser2" remote="github" revision="n7.1" />
+
   <!-- LD REPOS -->
   <!-- general -->
   <project path="build" name="android_build" remote="ld" revision="n7.1" >
