@@ -407,9 +407,6 @@
 
   <!-- BrokenOS repos -->
   <project path="packages/apps/Browser2" name="BrokenROM/packages_apps_Browser2" remote="github" revision="n7.1" />
-  
-  <!-- BrokenOS repos -->
-  <project path="packages/apps/Browser2" name="BrokenROM/packages_apps_Browser2" remote="github" revision="n7.1" />
 
   <!-- LD REPOS -->
   <!-- general -->
