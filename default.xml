@@ -471,6 +471,7 @@
   <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="ld" revision="n7.1" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ld" revision="n7.1" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ld" revision="n7.1" />
+  <project path="packages/apps/DeathlyTools" name="android_packages_apps_DeathlyTools" remote="ld" revision="n7.1" />
 
   <!-- vendor -->
   <project path="vendor/ld" name="android_vendor_ld" remote="ld" revision="n7.1" />
