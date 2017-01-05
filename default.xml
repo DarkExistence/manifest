@@ -15,7 +15,7 @@
   <remote  name="du"
            fetch="https://github.com/DirtyUnicorns/" />
 
-  <default revision="refs/tags/android-7.1.1_r1"
+  <default revision="refs/tags/android-7.1.1_r13"
            remote="aosp"
            sync-c="true"
            sync-f="true"
