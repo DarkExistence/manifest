@@ -35,8 +35,23 @@ Before you continue --> run this in the terminal
 
     repo init -u git://github.com/LiquidDeathOS/manifest.git -b n7.1
 
-    repo sync -fcj4 --force-sync --no-tags --no-clone-bundle --force-broken 
-    
+    repo sync
+
+This will initializate and sync all the sources you need to build LiquidDeathOS.
+In case you want to use additional arguments along with repo sync, here are some useful ones!
+
+    -f, --force-broken    continue sync even if a project fails to sync
+    --force-sync          overwrite an existing git directory if it needs to
+                          point to a different object directory. WARNING: this
+                          may cause loss of data
+    -c, --current-branch  fetch only current branch from server
+    -q, --quiet           be more quiet
+    -j JOBS, --jobs=JOBS  projects to fetch simultaneously (default 4)
+
+    --no-clone-bundle     disable use of /clone.bundle on HTTP/HTTPS
+    --no-tags             don't fetch tags
+
+Using repo sync with no arguments is the equivalet to repo sync -c -j4
 
 Building the System
 ---------------
