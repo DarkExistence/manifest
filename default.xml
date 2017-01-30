@@ -411,13 +411,15 @@
   <!-- general -->
   <project path="build" name="android_build" remote="ld" revision="n7.1" >
   <copyfile src="core/root.mk" dest="Makefile" />
-  <copyfile src="aosp-merge.sh" dest="aosp-merge.sh" />
   </project>
   <project path="bionic" name="android_bionic" remote="ld" revision="n7.1" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="ld" revision="n7.1" />
   <project path="development" name="android_development" remote="ld" revision="n7.1" />
   <project path="libcore" name="android_libcore" remote="ld" revision="n7.1" />
   <project path="manifest" name="manifest" remote="ld" revision="n7.1" />
+  <project path="misc" name="misc_misc" remote="ld" revision="n7.1" >
+  <copyfile src="aosp-merge.sh" dest="aosp-merge.sh" />
+  </project>
 
   <!-- external -->
   <project path="external/llvm" name="android_external_llvm" remote="ld" revision="n7.1" />
