@@ -483,6 +483,7 @@
   <project path="system/vold" name="android_system_vold" remote="ld" revision="n7.1" />
 
   <!-- vendor -->
-  <project path="vendor/ld" name="android_vendor_ld" remote="ld" revision="n7.1" />
-
+  <project path="vendor/ld" name="android_vendor_ld" remote="ld" revision="n7.1" >
+  <copyfile src="tools/build-deathly.sh" dest="build-deathly.sh" />
+  </project>
 </manifest>
