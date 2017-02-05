@@ -84,7 +84,7 @@ Example:
 ---------------
     ./build-deathly.sh -c3 -p -o3 -j4 n1awifi
 
-Uploading to the exynos5420 Gerrit
+Uploading to our Gerrit
 ---------------
 
 1st You must have local ssh keys on your computer if you do not here is a [guide] (http://goo.gl/86CfDP) to generate them.
@@ -95,14 +95,14 @@ Uploading to the exynos5420 Gerrit
 
 4th Make your changes and commit them
 
-5th use the following command to push your commit to gerrit            
+5th use the following command to push your commit to gerrit
 
 
-    git push ssh://USERNAME@review.exynos5420.com:29418/exynos5420/REPO_NAME HEAD:refs/for/branch-name
+    git push ssh://USERNAME@review.exynos5420.com:29418/LiquidDeathOS/REPO_NAME HEAD:refs/for/branch-name
 
-Example:   
-    
-    git push ssh://mosimchah@review.exynos5420.com:29418/exynos5420/android_device_samsung_exynos5420-common HEAD:refs/for/aosp-7.1
+Example:
+
+    git push ssh://mosimchah@review.exynos5420.com:29418/LiquidDeathOS/android_frameworks_base HEAD:refs/for/n7.1
 
 
 
