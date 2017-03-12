@@ -379,6 +379,7 @@
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
-  <include name="n7.1_default.xml" />
+  <include name="ld.xml" />
+  <include name="others.xml" />
 
 </manifest>
