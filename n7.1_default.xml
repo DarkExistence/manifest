@@ -66,6 +66,9 @@
 
 ##############################################################################################################
 
+  <!-- projekt -->
+  <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+
   <!-- DU REPOS -->
   <!-- general -->
   <project path="build/blueprint" name="android_build_blueprint" remote="du" revision="n7x" />
@@ -102,7 +105,6 @@
   <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" remote="du" revision="n7x" />
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" remote="du" revision="n7x" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="du" revision="n7x" />
-  <project path="packages/apps/Masquerade" name="android_packages_apps_Masquerade" remote="du" revision="n7x" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="du" revision="n7x" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="du" revision="n7x" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="du" revision="n7x" />
