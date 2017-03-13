@@ -18,6 +18,9 @@
   <copyfile src="aosp-merge.sh" dest="aosp-merge.sh" />
   </project>
 
+  <!-- external -->
+  <project path="external/libselinux" name="android_external_libselinux" remote="ld" revision="n7.1" />
+
   <!-- frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="ld" revision="n7.1" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ld" revision="n7.1" />
