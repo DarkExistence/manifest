@@ -379,6 +379,6 @@
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
 
   <include name="ld.xml" />
-  <include name="others.xml" />
+  <include name="remote.xml" />
 
 </manifest>
